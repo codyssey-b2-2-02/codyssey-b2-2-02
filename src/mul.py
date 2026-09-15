@@ -1,5 +1,5 @@
 from src.base_operation import CalculatorOperation
 
-class MulOperation(CalculatorOperation):
-    def mul(self, a:float, b)->float:
+class AddOperation(CalculatorOperation):
+    def calculate(self, a:float, b:float)->float:
         return a * b
