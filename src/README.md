@@ -20,3 +20,5 @@ python3
 >>> SubtractOperation().calculate(5.0, 3.0)
 2.0
 ```
+2
+3
