@@ -1,11 +1,13 @@
 # 파일/경로별 자동 리뷰어 지정
+
 # PR에서 해당 경로가 수정되면 지정된 사람이 자동으로 Reviewers에 등록됩니다.
-# 팀원 GitHub ID 확정되면 <팀원A-github-id>, <팀원B-github-id> 자리만 실제 ID로 교체하세요.
 
 # 공유 핵심 파일 — 전원 리뷰
-/src/base_operation.py    @segretoo <팀원A-github-id> <팀원B-github-id>
-/docs/interface.md         @segretoo <팀원A-github-id> <팀원B-github-id>
-/docs/CONTRIBUTING.md      @segretoo <팀원A-github-id> <팀원B-github-id>
+
+/src/base_operation.py @segretoo @bs7703 @leeaain2025
+/docs/interface.md @segretoo @bs7703 @leeaain2025
+/docs/CONTRIBUTING.md @segretoo @bs7703 @leeaain2025
 
 # 그 외 파일은 기본적으로 전원 리뷰 대상
-*                           @segretoo <팀원A-github-id> <팀원B-github-id>
+
+-                           @segretoo @bs7703 @leeaain2025
