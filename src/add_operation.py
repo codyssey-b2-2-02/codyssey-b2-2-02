@@ -11,10 +11,11 @@ class AddOperation(CalculatorOperation):
 
         Returns:
             float: num1과 num2의 합
-           
-	Example:
+
+        Example:
             >>> AddOperation().calculate(1.0, 2.0)
-            10.0
+            3.0
+
         """
         return num1 + num2
 
