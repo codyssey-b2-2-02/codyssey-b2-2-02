@@ -6,43 +6,60 @@
 ## 충돌 기록 #1
 
 ### 참여자
-- 작성자: <name>
-- 상대: <name>
+
+- 작성자: 이아인
+- 상대: 김문정
 
 ### 상황 (What happened)
-- 어떤 브랜치/파일에서 충돌이 났는지
+
+- src/add.py를 leeaain2025가 add_operation.py로 rename하는 동안, 본인이 같은 파일에 docstring 예시(Example) 블록을 추가하는 PR을 먼저 merge함
+- rename PR이 main과 divergent 상태가 되어 pull 시 충돌 발생
 
 ### 충돌 내용 (Conflict markers)
+
 ```txt
-<<<<<<< HEAD
-...
+<<<<<<< HEAD:src/add_operation.py
+    Example:
+        >>> AddOperation().calculate(1.0, 2.0)
+        10.0
 =======
-...
->>>>>>> feature/...
+    Example:
+        >>> AddOperation().calculate(1.0, 2.0)
+        3.0
+>>>>>>> b470b92:src/add.py
 ```
 
 ### 해결 과정 (How)
-- 선택한 해결 전략(keep both / choose one / refactor)과 이유
-- 실제로 수행한 명령 또는 절차
+
+- `git pull --no-rebase origin main`으로 병합 진행
+- 파일명은 rename된 add_operation.py 유지
+- 예시값은 실제 계산 결과에 맞는 3.0으로 통일 (10.0은 오기)
+- `git add` + `commit`(5a35ad5)으로 병합 커밋 생성 후 push
 
 ### 결과 (Outcome)
-- 최종 병합 결과 요약, 관련 PR/커밋 링크
+
+- PR #16에서 정상적으로 conflict 해소, main에 merge 완료
 
 ### 배운 점 (Learnings)
-- 다음에 예방하려면 무엇을 할지
+
+- 파일 rename과 내용 수정이 같은 파일에서 동시에 일어나면 rename/modify 충돌이 남
+- 겹치는 부분이 없으면 git이 자동으로 merge하지만, 같은 줄을 건드리면 수동 해결 필요
 
 ---
 
 ## 충돌 기록 #2
 
 ### 참여자
+
 - 작성자: <name>
 - 상대: <name>
 
 ### 상황 (What happened)
+
 -
 
 ### 충돌 내용 (Conflict markers)
+
 ```txt
 <<<<<<< HEAD
 ...
@@ -52,10 +69,13 @@
 ```
 
 ### 해결 과정 (How)
+
 -
 
 ### 결과 (Outcome)
+
 -
 
 ### 배운 점 (Learnings)
+
 -
