@@ -13,3 +13,14 @@ class AddOperation(CalculatorOperation):
             float: num1과 num2의 합
         """
         return num1 + num2
+
+if __name__ == "__main__":
+    op = AddOperation()
+
+    assert op.calculate(1.0, 2.0) == 3.0
+    assert op.calculate(-1.0, -2.0) == -3.0
+    assert op.calculate(0.0, 5.0) == 5.0
+    assert op.calculate(1.5, 2.3) == 3.8
+
+    print("모든 테스트 통과")
+    print(op.calculate(1.0, 2.0))  # 3.0
