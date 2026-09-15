@@ -15,6 +15,7 @@ class AddOperation(CalculatorOperation):
         Example:
             >>> AddOperation().calculate(1.0, 2.0)
             3.0
+
         """
         return num1 + num2
 
