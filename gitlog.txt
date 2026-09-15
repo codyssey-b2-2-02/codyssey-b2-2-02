@@ -1,0 +1,84 @@
+*   90754dd Merge pull request #25 from codyssey-b2-2-02/docs/submit
+|\  
+| * de7f1be fix: SUBMISSION.md: 김상원의 PR과 ISSUE 코드리뷰반영 conflict-resoulution.md: rebase시 자명충돌 경험에대한 기록 제시 troubleshooting-log.md: reset -soft head~1명령어 사용후 결과에대한제시
+|/  
+*   393a7f9 Merge pull request #22 from codyssey-b2-2-02/docs/submission-leeaain
+|\  
+| * 4f210d9 docs: SUBMISSION.md: 내 활동 기록 추가
+|/  
+*   aff1588 Merge pull request #20 from codyssey-b2-2-02/docs/mission-logs
+|\  
+| * 936fefd docs: 미션 로그 문서 정리
+|/  
+*   861d07c Merge pull request #18 from codyssey-b2-2-02/docs/conflict-log
+|\  
+| * 3e2958f docs: conflict-resolution: add_operation 충돌 기록 #1 작성
+|/  
+| * fb2a41d fix: SUBMISSION.md: 김상원의 PR과 ISSUE 코드리뷰반영 conflict-resoulution.md: rebase시 자명충돌 경험에대한 기록 제시 troubleshooting-log.md: reset -soft head~1명령어 사용후 결과에대한제시
+| * 8e74d65 fix: SUBMISSION.md: 김상원의 PR과 ISSUE 코드리뷰반영 conflict-resoulution.md: rebase시 자명충돌 경험에대한 기록 제시 troubleshooting-log.md: reset -soft head~1명령어 사용후 결과에대한제시
+|/  
+| * 0a2ae92 Revert "docs: readme: 임시 텍스트 추가"
+| * b12fbec docs: readme: 임시 텍스트 추가
+|/  
+| * 570d7c9 docs: readme: 트러블슈팅 amend 실습용 문구 추가
+|/  
+| * 1090d46 feat:ff
+|/  
+| * af7aeeb docs: troubleshooting-log.md: git stash 시나리오 기록 추가 보강
+|/  
+*   bfc3202 Merge pull request #16 from codyssey-b2-2-02/feature/rename-add
+|\  
+| *   5a35ad5 fix: add_operation: 병합 충돌 해결 - 예시값 3.0으로 통일 (파일명 rename 반영)
+| |\  
+| |/  
+|/|   
+* |   b470b92 Merge pull request #15 from codyssey-b2-2-02/feature/add-comment
+|\ \  
+| * | cbb8c96 docs: add: docstring 보강
+|/ /  
+| * 71a170a fix: add_operation.py: 3.0 -> 10.0
+| * 013727e fix: add_operatino: rename
+| * c4541bd refactor: add: 파일명을 add_operation.py로 변경
+|/  
+*   381921b Merge pull request #13 from codyssey-b2-2-02/feature/add-test
+|\  
+| * 7eaa78d feat: add: add 연산 테스트 코드 추가
+* |   5d31a94 Merge pull request #10 from codyssey-b2-2-02/fix/mul
+|\ \  
+| * | 5221506 fix: mul.py: 클래스의 이름이잘못된부분과 코드리뷰에서 파일의설명이 부족한부분을 docstring으로 채웠습니다.
+* | |   80603ef Merge pull request #11 from codyssey-b2-2-02/fix/sub
+|\ \ \  
+| |/ /  
+|/| |   
+| * | 574dc5e fix: sub_operation.py -> sub.py
+|/ /  
+* |   cdcdb49 Merge pull request #7 from codyssey-b2-2-02/feature/sum
+|\ \  
+| * \   46a6c01 Merge branch 'main' into feature/sum
+| |\ \  
+| |/ /  
+|/| |   
+* | |   74ec9aa Merge pull request #5 from codyssey-b2-2-02/feature/add
+|\ \ \  
+| | |/  
+| |/|   
+| * | e248d6c fix: add: 리뷰 반영 - docstring 작성 및 매개변수명 num1,num2로 수정
+| * | 9e93673 chore: gitignore: 파이썬 캐시 파일 제외 설정 추가
+| * | eb62be5 feat: add: interface.md에 규정된 규칙을 상속받아 add함수를 구현
+|/ /  
+* |   d474265 Merge pull request #2 from codyssey-b2-2-02/feat/mul
+|\ \  
+| * | c818c47 feat: src.mul.py: src.base_operation.py의 인터페이스를 상속받아 ,두실수를 곱하는 연산을 규정대로 구현했음.
+| * | 4c871dd feat: src.mul.py: src.base_operation.py의 인터페이스를 상속받아 ,두실수를 곱하는 연산을 규정대로 구현했음.
+|/ /  
+| * 1e26a6e fix: sum_operation.py: sub_operation.py로 수정. sum 연산도 SubStrat 연산으로 코드 수정
+| *   770ba59 Merge branch 'main' into feature/sum
+| |\  
+| |/  
+|/|   
+* | 6e3b3ed fix: codeowners: 팀원 GitHub ID 미지정 수정
+* | ec53c30 feat: codeowners: 파일별 자동 리뷰어 지정 추가
+| * 310527b feat: 더하기 연산 유틸 함수 작성
+|/  
+* 7428c65 feat: 사칙연산 프로젝트 초기 구조 정리
+* 8c49895 docs: add repo structure and collaboration templates

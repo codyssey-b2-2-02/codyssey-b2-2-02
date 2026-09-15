@@ -12,77 +12,86 @@
 
 ## 팀 구성
 
-| 이름 | GitHub ID | 역할 |
-|---|---|---|
-| [이름] | [@id] | [예: 팀장 / 브랜치 정책 담당] |
-| [이름] | [@id] | |
-| [이름] | [@id] | |
+| 이름   | GitHub ID                                      | 역할 |
+| ------ | ---------------------------------------------- | ---- |
+| 김문정 | [@segretoo](https://github.com/segretoo)       | 팀장 |
+| 김상원 | [@bs7703](https://github.com/bs7703)           | 팀원 |
+| 이아인 | [@leeaain2025](https://github.com/leeaain2025) | 팀원 |
 
-- 저장소 방식: [ ] GitHub Organization  /  [ ] 개인 저장소 + Collaborator 초대
-- 저장소 URL: [url]
+- 저장소 방식: [x] GitHub Organization
+- 저장소 URL: https://github.com/codyssey-b2-2-02/codyssey-b2-2-02
 
 ## 진행 체크리스트
 
 ### 1. 팀 구성 및 저장소 준비
-- [ ] 3~5인 팀 확정
-- [ ] 기본 폴더 구성: `README.md` / `docs/` / `src/` / `team/`
-- [ ] Branch Protection Rule 설정 (main 직접 push 금지, PR만 허용, 최소 1명 승인)
+
+- [x] 3~5인 팀 확정 (3인)
+- [x] 기본 폴더 구성: `README.md` / `docs/` / `src/`
+- [x] Branch Protection Rule 설정 (main 직접 push 금지, PR만 허용, 최소 1명 승인)
 
 ### 2. 브랜치 전략 (GitHub Flow)
-- [ ] `main`(배포 가능 상태) / `feature/*` 규칙 확정
-- [ ] 브랜치 네이밍 규칙 문서화 → `docs/CONTRIBUTING.md`
-- [ ] GitHub Flow를 선택한 이유 3줄 이내로 기록
+
+- [x] `main`(배포 가능 상태) / `feature/*` 규칙 확정
+- [x] 브랜치 네이밍 규칙 문서화 → `docs/CONTRIBUTING.md`
+- [x] GitHub Flow를 선택한 이유 3줄 이내로 기록
 
 ### 3. 이슈 기반 작업 및 PR 연동
-- [ ] 작업 단위별 Issue 생성
-- [ ] PR 본문에 `Closes #이슈번호` 포함
-- [ ] `SUBMISSION.md`에 팀원별 Issue/PR 목록 정리
+
+- [x] 작업 단위별 Issue 생성
+- [x] PR 본문에 `Closes #이슈번호` 포함
+- [x] `SUBMISSION.md`에 팀원별 Issue/PR 목록 정리
 
 ### 4. 커밋 메시지 컨벤션
-- [ ] `feat:` / `fix:` / `docs:` / `refactor:` 등 규칙 문서화
-- [ ] 의미없는 커밋 메시지(`update`, `fix`, `temp`, `wip`, `final` 등) 금지 확인
+
+- [x] `feat:` / `fix:` / `docs:` / `refactor:` 등 규칙 문서화
+- [x] 의미없는 커밋 메시지(`update`, `fix`, `temp`, `wip`, `final` 등) 금지 확인
 
 ### 5. PR 기반 협업 (팀원별 최소 기준 — 전원 충족)
-| 팀원 | PR 생성·병합 (≥2) | 코드 리뷰 작성 (≥2, 본인 PR 제외) | 리뷰 반영 (≥1) |
-|---|---|---|---|
-| [이름] | | | |
-| [이름] | | | |
-| [이름] | | | |
+
+| 팀원   | PR 생성·병합 (≥2)     | 코드 리뷰 작성 (≥2, 본인 PR 제외) | 리뷰 반영 (≥1) |
+| ------ | --------------------- | --------------------------------- | -------------- |
+| 김문정 | ✅ 3개 (#5, #13, #15) | ✅ 2개 (#2, #10)                  | ✅ (#5)        |
+| 김상원 | ✅ 2개 (#2, #10)      | ✅ 2개 (#7, #11)                  | ✅ (#2)        |
+| 이아인 | ✅ 3개 (#7, #11, #16) | ✅ 2개 (#5, #13)                  | ✅             |
 
 - PR 본문 필수 항목: **What(변경 사항) / Why(변경 이유) / How(테스트·검증 방법)**
 
 ### 6. 코드 리뷰 최소 품질 기준
-- [ ] "LGTM"만 있는 리뷰 없음 — 라인/파일 근거의 실질 코멘트 1개 이상
-- [ ] 리뷰어-작성자 간 최소 1회 상호작용(답글/수정 반영) 기록
+
+- [x] "LGTM"만 있는 리뷰 없음 — 라인/파일 근거의 실질 코멘트 1개 이상
+- [x] 리뷰어-작성자 간 최소 1회 상호작용(답글/수정 반영) 기록
 
 ### 7. 충돌 해결 실습 (비자명 충돌 포함)
-- [ ] 팀 전체 최소 2회 충돌 해결 기록
-- [ ] 그중 1회 이상 "비자명 충돌" (같은 hunk 상이 수정 / 파일 이동·삭제 vs 내용 수정)
-- [ ] 기록 위치: `docs/conflict-resolution.md`
+
+- [x] 팀 전체 최소 2회 충돌 해결 기록
+- [x] 그중 1회 이상 "비자명 충돌" (같은 hunk 상이 수정 / 파일 이동·삭제 vs 내용 수정)
+- [x] 기록 위치: `docs/conflict-resolution.md`
 
 ### 8. Git 트러블슈팅 실습 (팀 전체 4종)
-- [ ] a. `git commit --amend`
-- [ ] b. `git reset --soft HEAD~1`
-- [ ] c. `git revert`
-- [ ] d. `git stash` / `git stash pop`
-- [ ] 팀원별 최소 1개 시나리오 참여 (이름/역할 명시) → `docs/troubleshooting-log.md`
+
+- [x] a. `git commit --amend` (김문정)
+- [x] b. `git reset --soft HEAD~1` (김상원)
+- [x] c. `git revert` (김문정)
+- [x] d. `git stash` / `git stash pop` (이아인)
+- [x] 팀원별 최소 1개 시나리오 참여 (이름/역할 명시) → `docs/troubleshooting-log.md`
 
 ### 9. 협업 가이드 문서
-- [ ] `docs/CONTRIBUTING.md` 완성 (팀원 분담 작성)
+
+- [x] `docs/CONTRIBUTING.md` 완성 (팀원 분담 작성)
 
 ### 10. 간단한 결과물 (택 1)
-- [ ] (A) 유틸 함수 모음 — 팀원별 함수 1개 이상 + 사용 예시
-- [ ] (B) 팀 소개 — `team/` 팀원별 소개 파일 + README 링크
-- [ ] (C) 학습 노트 — 팀원별 노트 1개 이상 + README 목차
+
+- [x] (A) 유틸 함수 모음 — 팀원별 함수 1개 이상 + 사용 예시 (`src/README.md` 참고)
 
 ### 보너스 (선택)
-- [ ] 히스토리 정리 (`git rebase -i`로 squash/reword, 전후 비교 문서화)
-- [ ] `.github/CODEOWNERS` 설정
+
+- [x] 히스토리 정리 (`git rebase -i`로 squash/reword, 전후 비교 문서화) — 김상원
+- [x] `.github/CODEOWNERS` 설정
 
 ## 제출물
 
-1. **Git 히스토리 증빙**: `git log --oneline --graph --all` 결과 (텍스트 또는 스크린샷)
-2. **간단한 결과물**: 10번 항목에서 택한 산출물
+1. **Git 히스토리 증빙**: `SUBMISSION.md`의 `git log --oneline --graph --all` 결과 참고
+2. **간단한 결과물**: (A) 유틸 함수 모음 — `src/` 폴더 (`add_operation.py`, `sub.py`, `mul.py`)
 
 ## 제약 사항 (운영 안정성 — 중요)
 
@@ -93,9 +102,9 @@
 
 ## 학습 목표 (평가·리뷰 대비 자가 점검)
 
-- [ ] 브랜치가 내부적으로 어떻게 동작하는지(커밋을 가리키는 포인터) 설명할 수 있다
-- [ ] GitHub Flow가 무엇이고 왜 팀 협업에 필요한지 설명할 수 있다
-- [ ] PR의 목적과 코드 리뷰의 가치를 설명할 수 있다
-- [ ] 충돌이 왜 발생하고 충돌 마커(`<<<<<<<`, `=======`, `>>>>>>>`)가 무엇인지 설명할 수 있다
-- [ ] `reset` / `revert` / `stash`의 차이와 각각 언제 쓰는지 설명할 수 있다
-- [ ] 협업 중 문제 발생 시 재현 가능한 방식으로 기록·설명할 수 있다
+- [x] 브랜치가 내부적으로 어떻게 동작하는지(커밋을 가리키는 포인터) 설명할 수 있다
+- [x] GitHub Flow가 무엇이고 왜 팀 협업에 필요한지 설명할 수 있다
+- [x] PR의 목적과 코드 리뷰의 가치를 설명할 수 있다
+- [x] 충돌이 왜 발생하고 충돌 마커(`<<<<<<<`, `=======`, `>>>>>>>`)가 무엇인지 설명할 수 있다
+- [x] `reset` / `revert` / `stash`의 차이와 각각 언제 쓰는지 설명할 수 있다
+- [x] 협업 중 문제 발생 시 재현 가능한 방식으로 기록·설명할 수 있다

@@ -1,7 +1,6 @@
 # Troubleshooting Log
 
 > 팀 전체가 아래 4가지 시나리오를 모두 수행. 팀원별 최소 1개 시나리오에는 참여(이름/역할 명시) 필수.
-> 스크린샷은 `docs/images/troubleshooting/` 폴더에 넣고 아래처럼 이미지로 삽입합니다.
 
 ## 시나리오: git commit --amend (최근 커밋 메시지 수정)
 
@@ -25,7 +24,7 @@
 bfc3202 (main) Merge pull request #16 from codyssey-b2-2-02/feature/rename-add
 ```
 
-![amend 실행 결과](images/troubleshooting/amend.png)
+![amend 실행 결과](../images/amend.png)
 
 - 새 커밋이 추가되지 않고, 직전 커밋(570d7c9)의 메시지만 교체됨
 - 주의점: 이미 push된 커밋을 amend하면 해시가 바뀌므로 공유 브랜치에서는 사용하지 않고 개인 작업 브랜치에서만 사용함
@@ -40,11 +39,11 @@ bfc3202 (main) Merge pull request #16 from codyssey-b2-2-02/feature/rename-add
 
 ### 참여자
 
-- <name>
+- 김상원
 
 ### 상황
 
--
+- add_operation.py의 예시값을 실수로 3.0에서 10.0으로 되돌리는 커밋(71a170a)을 로컬에서 만들었는데, 아직 push하지 않은 상태라 이 커밋만 취소하고 변경 내용은 다시 검토하고 싶었던 상황
 
 ### 시도한 명령/절차
 
@@ -52,17 +51,23 @@ bfc3202 (main) Merge pull request #16 from codyssey-b2-2-02/feature/rename-add
 
 ### 결과
 
+```
 bfc3202 (HEAD -> main) Merge pull request #16 from codyssey-b2-2-02/feature/rename-add
 5a35ad5 (origin/feature/rename-add) fix: add_operation: 병합 충돌 해결 - 예시값 3.0으로 통일 (파일명 rename 반영)
 71a170a fix: add_operation.py: 3.0 -> 10.0
+```
+
+![reset 실행 결과](../images/reset.png)
+
+- Reset 전: 로컬 브랜치가 origin/main보다 1개 커밋(71a170a) 앞서 있었음
+- Reset 후: 로컬 브랜치 포인터가 원격 저장소의 최상단 커밋(origin/main, bfc3202) 위치로 이동
+- 커밋만 취소되고, 작성한 코드 변경사항은 Staged(Changes to be committed) 상태로 유지됨
 
 ### 왜 이 방법을 선택했는가 (Why)
 
-- Reset 전: 로컬 브랜치 (origin/main보다 1개 커밋 앞섬)
+- 아직 push하지 않은 로컬 전용 커밋이라 안전하게 취소 가능했고, 변경 내용 자체는 지우지 않고 다시 검토할 수 있도록 유지하고 싶어서 reset --soft를 선택함
 
-Reset 후: 로컬 브랜치 포인터가 원격 저장소의 최상단 커밋(origin/main) 위치로 이동
-
-커밋만 취소되고 작성한 코드는 초록색 Staged(Changes to be committed) 상태를 유지하기위함.
+---
 
 ## 시나리오: git revert (원격에 push된 커밋 취소)
 
@@ -88,7 +93,7 @@ b12fbec (origin/feature/troubleshoot-revert) docs: readme: 임시 텍스트 추�
 bfc3202 (main) Merge pull request #16 from codyssey-b2-2-02/feature/rename-add
 ```
 
-![revert 실행 결과](images/troubleshooting/revert.png)
+![revert 실행 결과](../images/revert.png)
 
 - 기존 커밋(b12fbec)은 삭제되지 않고 그대로 남고, 그 변경을 취소하는 새 커밋(0a2ae92)이 위에 추가됨
 - README.md 내용은 추가 이전 상태로 복원됨
