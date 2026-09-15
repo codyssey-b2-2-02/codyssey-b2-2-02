@@ -40,7 +40,7 @@ bfc3202 (main) Merge pull request #16 from codyssey-b2-2-02/feature/rename-add
 
 ### 참여자
 
-- <name>
+- 김상원
 
 ### 상황
 
@@ -52,11 +52,17 @@ bfc3202 (main) Merge pull request #16 from codyssey-b2-2-02/feature/rename-add
 
 ### 결과
 
--
+bfc3202 (HEAD -> main) Merge pull request #16 from codyssey-b2-2-02/feature/rename-add
+5a35ad5 (origin/feature/rename-add) fix: add_operation: 병합 충돌 해결 - 예시값 3.0으로 통일 (파일명 rename 반영)
+71a170a fix: add_operation.py: 3.0 -> 10.0
 
 ### 왜 이 방법을 선택했는가 (Why)
 
-- ***
+Reset 전: 로컬 브랜치 (origin/main보다 1개 커밋 앞섬)
+
+Reset 후: 로컬 브랜치 포인터가 원격 저장소의 최상단 커밋(origin/main) 위치로 이동
+
+커밋만 취소되고 작성한 코드는 초록색 Staged(Changes to be committed) 상태를 유지하기위함.
 
 ## 시나리오: git revert (원격에 push된 커밋 취소)
 

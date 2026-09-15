@@ -7,12 +7,12 @@
 - 코드 리뷰 작성: mul PR #2 — 1차 리뷰(Request changes: calculate 메서드명·파라미터명 지적), 2차 리뷰(Approve: MultiplyOperation→MulOperation 클래스명 지적)
 - 리뷰 반영 경험: add PR #5 — 이아인님이 지적한 파라미터명(a,b→num1,num2)·DocString 누락을 커밋(fix: add: 리뷰 반영...)으로 반영
 
-## [이름2]
+## 김상원
 
-- Issue: #, #
-- PR: #, #
-- 코드 리뷰 작성: #, #
-- 리뷰 반영 경험:
+- Issue:#2, #10
+- PR:feat mul(곱함수구현) #2 -, fix mul.py#10 (독스트링 부족한점과 이름이 잘못된점을 해결)
+- 코드 리뷰 작성: Feature/sum#7 -1차리뷰 정상적으로 프로그램이 목표대로 작성함을 확인했으나, 문서설명이 부족한것을 확인하고 안내드렸습니다.  fix: sub_operation.py -> sub.py- #11 그후 수정된부분이 잘작성되어 완성된피드백을 안내드렸습니다.
+- 리뷰 반영 경험:feat:mul- #2 함수의 이름과 내용이 맞지않아서 수정을 요청받았고 완성했습니다.
 
 ## [이름3]
 
