@@ -59,16 +59,31 @@
 
 ## 시나리오: git stash / git stash pop (작업 보관 후 전환)
 ### 참여자
-- <name>
+- 이아인
 
 ### 상황
--
+- 로컬 feature/sum 브랜치에서 sum.py 파일을 개발중에 팀원의 .github/CODEOWNERS 수정으로 인한 new commit & push가 발생하면서 공통 적용 요청 받으면서 작업하던 내용을 임시 저장하고 로컬 main 브랜치를 업데이트해야 하는 상황.
 
 ### 시도한 명령/절차
 - `git stash` → `git stash pop`
+```shell
+# 임시 저장
+git stash
+
+# main 브랜치 업데이트(팀원의 변경사항 반영)
+git siwtch main
+git fetch origin main
+git pull origin main
+
+# 본래 브랜치로 복귀
+git switch feature/sum
+# 임시저장했던 내용 불러오고 목록에서 제거
+git stash pop
+```
 
 ### 결과
 -
+
 
 ### 왜 이 방법을 선택했는가 (Why)
 -
