@@ -7,12 +7,12 @@
 - 코드 리뷰 작성: mul PR #2 — 1차 리뷰(Request changes: calculate 메서드명·파라미터명 지적), 2차 리뷰(Approve: MultiplyOperation→MulOperation 클래스명 지적)
 - 리뷰 반영 경험: add PR #5 — 이아인님이 지적한 파라미터명(a,b→num1,num2)·DocString 누락을 커밋(fix: add: 리뷰 반영...)으로 반영
 
-## [이름2]
+## 이아인
 
-- Issue: #, #
-- PR: #, #
-- 코드 리뷰 작성: #, #
-- 리뷰 반영 경험:
+- Issue: #3(feat: sum 구현), #6(feat: sub 구현), #9(fix: sub_operation.py: sub.py)
+- PR: #7(Feature/sum), #11(fix: sub_operation.py -> sub.py), #16(refactor: add: 파일명을 add_operation.py로 변경)
+- 코드 리뷰 작성: #5(feat: add 구현), #13(feat: add 테스트 추가)
+- 리뷰 반영 경험: 김상원님이 지적해주신 파일명 수정, Doc string 추가를 반영했습니다.
 
 ## [이름3]
 
