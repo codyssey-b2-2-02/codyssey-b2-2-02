@@ -25,7 +25,6 @@
 
 ### 1. 팀 구성 및 저장소 준비
 - [ ] 3~5인 팀 확정
-- [ ] 저장소 생성 (Org 또는 개인+Collaborator)
 - [ ] 기본 폴더 구성: `README.md` / `docs/` / `src/` / `team/`
 - [ ] Branch Protection Rule 설정 (main 직접 push 금지, PR만 허용, 최소 1명 승인)
 
